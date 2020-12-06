@@ -25,7 +25,18 @@ const data = [
         "What do you call a guy with a rubber toe? Roberto.",
         "What did the pirate say when he turned 80 years old? Aye matey"
     ],
-    []
+    [
+        "I know, I know! I'm Hilarious.",
+        "I really crack myself up!",
+        "Bonifide comedian right here.",
+        "Drops mike. Walks away",
+        "You need to start paying me for gold like this!",
+        "Sheesh, tough crowd!",
+        "Hi-la-ri-ous!",
+        "Dave Chappelle has got nothing on me."
+    ]
 ];
+
+console.log(data[0].length);
 
 
