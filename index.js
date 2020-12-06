@@ -1,9 +1,11 @@
+//
+
 const data = [
     [
-        "How’s life been treating you?",
+        "Yo!",
         "What’s cracking?",
         "What's up?",
-        "Hey Good to see you",
+        "Hey Good to see you!",
         "How’s it going?",
         "What’s cracking?",
         "Hey, long time no see.",
@@ -38,7 +40,7 @@ const data = [
 ];
 
 /**
- * Calculates a random number between 0 and an upper limit number..
+ * Calculates a random number between 0 and an upper limit number.
  *
  * @param {number} num- upper limit number
  * @returns {number} random number between 0 and upper limit
@@ -48,5 +50,27 @@ function randNum(num){
     return Math.floor(Math.random() * num);
 }
 
+/**
+ * Generates the msg that will be printed to console
+ *
+ * @param {arr} arr- .
+ * @returns string
+ */
+
+ function output(arr){
+   const randIndex = randNum((arr.length-1));
+   let msg =  `
+   ${arr[0][randIndex]} 
+
+   Listen to this funny joke.
+   
+   ${arr[1][randIndex]}
+   
+   ${arr[2][randIndex]}`;
+   return msg;
+ }
 
 
+
+
+console.log(output(data));
