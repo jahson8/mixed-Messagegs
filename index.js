@@ -37,6 +37,16 @@ const data = [
     ]
 ];
 
-console.log(data[0].length);
+/**
+ * Calculates a random number between 0 and an upper limit number..
+ *
+ * @param {number} num- upper limit number
+ * @returns {number} random number between 0 and upper limit
+ */
+
+function randNum(num){
+    return Math.floor(Math.random() * num);
+}
+
 
 
