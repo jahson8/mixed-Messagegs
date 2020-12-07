@@ -28,14 +28,15 @@ const data = [
         "What did the pirate say when he turned 80 years old? Aye matey"
     ],
     [
-        "I know, I know! I'm Hilarious.",
+        "I know, I know! I'm too funny.",
         "I really crack myself up!",
         "Bonifide comedian right here.",
         "Drops mike. Walks away",
         "You need to start paying me for gold like this!",
         "Sheesh, tough crowd!",
         "Hi-la-ri-ous!",
-        "Dave Chappelle has got nothing on me."
+        "Dave Chappelle has got nothing on me.",
+        "Come on! You gotta admit that was. Right?"
     ]
 ];
 
@@ -51,26 +52,28 @@ function randNum(num){
 }
 
 /**
- * Generates the msg that will be printed to console
+ * Generates a random index from an array.
  *
- * @param {arr} arr- .
- * @returns string
+ * @param {arr} 
+ * @returns {number} random index in an array
+ */
+
+ function randIndex(arr){
+    const index = randNum(arr.length);
+   return index;
+ }
+
+/**
+ * Generates random message to be printed to the console
+ *
+ * @param {arr} 
+ * @returns {string} random message
+ * 
  */
 
  function output(arr){
-   const randIndex = randNum((arr.length-1));
-   let msg =  `
-   ${arr[0][randIndex]} 
-
-   Listen to this funny joke.
-   
-   ${arr[1][randIndex]}
-   
-   ${arr[2][randIndex]}`;
-   return msg;
+     const msg = arr[randIndex(arr)];
+     return (msg);
  }
 
-
-
-
-console.log(output(data));
+console.log(output(data[2]));
