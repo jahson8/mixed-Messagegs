@@ -8,7 +8,7 @@
 
 ## General Info
 
-This project generates a simple random message to the console when run.
+This project generates a simple message to the console when executed.
 
 ## Technologies
 
