@@ -89,7 +89,7 @@ function randNum(num) {
  function output(){
     let msg = message(data[0]) + " Here's a joke for you. \n\n";
         msg += message(data[1]) + "\n\n";
-        msg += message(data[2])+ "\n\n";
+        msg += message(data[2]);
      return  msg;
  }
 
