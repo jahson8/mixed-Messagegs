@@ -1,4 +1,4 @@
-# Mixed Messages
+# Mixed Messages - Joke Generator
 
 ## Table of contents
 
