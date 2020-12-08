@@ -29,7 +29,7 @@ const data = [
     ],
     [
         "I know, I know! I'm too funny.",
-        "I really crack myself up!",
+        "Haha! I really crack myself up!",
         "Bonifide comedian right here.",
         "Drops mike. Walks away",
         "You need to start paying me for gold like this!",
@@ -40,6 +40,7 @@ const data = [
     ]
 ];
 
+
 /**
  * Calculates a random number between 0 and an upper limit number.
  *
@@ -47,9 +48,10 @@ const data = [
  * @returns {number} random number between 0 and upper limit
  */
 
-function randNum(num){
+function randNum(num) {
     return Math.floor(Math.random() * num);
 }
+
 
 /**
  * Generates a random index from an array.
@@ -71,9 +73,25 @@ function randNum(num){
  * 
  */
 
- function output(arr){
+ function message(arr){
      const msg = arr[randIndex(arr)];
      return (msg);
  }
 
-console.log(output(data[2]));
+/**
+ * Generates random message to be printed to the console
+ *
+ * @param {arr} 
+ * @returns {string} random message
+ * 
+ */
+
+ function output(){
+    let msg = message(data[0]) + " Here's a joke for you. \n\n";
+        msg += message(data[1]) + "\n\n";
+        msg += message(data[2])+ "\n\n";
+     return  msg;
+ }
+
+
+console.log(output());
