@@ -66,7 +66,7 @@ function randNum(num) {
  }
 
 /**
- * Generates random message to be printed to the console
+ * Accesses data from an array
  *
  * @param {arr} 
  * @returns {string} random message
