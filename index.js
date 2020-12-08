@@ -36,7 +36,7 @@ const data = [
         "Sheesh, tough crowd!",
         "Hi-la-ri-ous!",
         "Dave Chappelle has got nothing on me.",
-        "Come on! You gotta admit that was. Right?"
+        "Come on! You gotta admit that was funny. Right?"
     ]
 ];
 
